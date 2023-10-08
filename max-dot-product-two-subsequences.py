@@ -2,7 +2,6 @@ class Solution:
   def maxDotProduct(self, A: List[int], B: List[int]) -> int:
     m = len(A)
     n = len(B)
-    # dp[i][j] := max dot product of two subseqs nums[0..i) and nums2[0..j)
     dp = [[-math.inf] * (n + 1) for _ in range(m + 1)]
 
     for i in range(m):
